@@ -19,3 +19,26 @@ html, body, #canvas-wrapper {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
+@media (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body, #canvas-wrapper {
+        height: 100%;
+    }
+
+    #canvas {
+        display: inline-block;
+        background-image: url("img/space.png");
+        width: 100%;
+        height: 100%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }    
+}
